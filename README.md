@@ -3,4 +3,4 @@ First commerce project. Layout from Figma for "Petrostal manufacture". "Заво
 
 Ссылка на макет: [Петросталь](https://www.figma.com/file/XD6YEXWONBVjrsRYAeAqBj)
 
-ДЕМО Верстки: [Петросталь](https://isergeich22.github.io/petrostal/)
+ДЕМО Верстки: [Петросталь](https://giusepperoro.github.io/petrostal/)
