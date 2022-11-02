@@ -1,0 +1,915 @@
+@media screen and (max-width: 1439px) {
+    .header {
+        width: 100%;
+        height: 60vh;
+        background: url('img/header.png');
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+        .header .brand {
+            display: flex;
+            flex-direction: column;        
+            width: 100%;
+            height: 100%;
+        }
+    
+            .brand .top-gradient {
+                width: 100%;
+                height: 61px;
+                background: linear-gradient(0deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 100%);
+                display: none;
+            }
+    
+            .brand .brand-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 48%;
+                height: 100%;
+                margin: 0 26%;
+                background: rgba(255, 255, 255, .75);
+            }
+    
+                .brand-name .name {
+                    width: 100%;
+                    height: 22vh;
+                    display: flex;                
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                    .brand-name .logo {
+                        margin: 0 auto;
+                    }
+    
+                        .brand-name .logo img{
+                            width: 10vw;
+                            height: 10vw;
+                            text-align: center;                        
+                        }
+                    
+                    .name a {
+                        text-decoration: none;
+                        text-align: center;
+                    }
+    
+                    .name .p-main {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 1.4vw;
+                        line-height: 1.438em;
+                        text-align: center;
+                        color: #ED4F37;
+                        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+                    }
+    
+                    .name .p-bold {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 700;
+                        font-size: 4.5vw;
+                        line-height: 1.188em;
+                        text-align: center;
+                        color: #ED4F37;
+                        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+                    }
+                
+                .brand-name .legal-entity {
+                    width: 100%;
+                    height: 22vh;
+                    display: flex;         
+                    flex-direction: column;
+                    justify-content: center;
+                }
+    
+                    .legal-entity .p-main {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 1.4vw;
+                        line-height: .818em;
+                        text-align: center;
+                        color: #ED4F37;
+                        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+                    }
+    
+                    .legal-entity .entity-bold {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 600;
+                        font-size: 2vw;
+                        line-height: 1.25em;
+                        text-align: center;
+                        color: #ED4F37;
+                        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+                    }
+    
+            .brand .bot-gradient {
+                width: 100%;
+                height: 60px;
+                background: linear-gradient(180deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 100%);
+                display: none;
+            }
+    
+    .nav {
+        width: 100%;
+        height: 80px;
+        border-top: 5px solid #ED4F37;
+        border-bottom: 5px solid #ED4F37;
+        background: #E2E2E2;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;        
+    }
+    
+        .nav .search {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 1.8vw;
+            line-height: 1.438em;
+            color: #70727E;
+            width: 19%;
+            height: 39px;
+            border: none;
+            background: #fff;
+            text-align: center;
+            border-radius: 10px;
+        }
+    
+        .nav p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2vw;
+            line-height: 1.75em;
+        }
+    
+        .nav .about, .nav .products, .nav .staff {
+            text-decoration: none;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 1.9vw;
+            line-height: 1.438em;
+            display: inline-block;
+            position: relative;
+        }
+    
+            .products a {
+                text-decoration: none;
+                color: #000;
+            }
+    
+            .about:hover > .dropdown-about,
+            .about .dropdown-about:hover {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+            min-width: 20%;
+            text-align: left;
+            box-shadow: 0px 3px 5px -1px #ccc;
+            }
+    
+            .products:hover > .dropdown-products,
+            .products .dropdown-products:hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                min-width: 29%;
+                text-align: left;
+                box-shadow: 0px 3px 5px -1px #ccc;
+            }
+    
+            .staff:hover > .dropdown-staff,
+            .staff .dropdown-staff:hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                min-width: 20%;
+                text-align: left;
+                box-shadow: 0px 3px 5px -1px #ccc;
+            }
+    
+            .dropdown-about {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                padding-left: 0;
+                left: 0;
+                display: none;            
+                width: 120%;
+                height: 204px;
+                background: #E2E2E2;
+            }
+    
+            .dropdown-products {
+                visibility: visible;
+                opacity: 1;
+                padding-left: 0;
+                left: 0;
+                display: none;
+                position: absolute;
+                width: 170%;
+                height: 249px;
+                background: #E2E2E2;
+            }
+    
+            .dropdown-staff {
+                visibility: visible;
+                opacity: 1;
+                padding-left: 0;
+                left: 0;
+                display: none;
+                position: absolute;
+                width: 170%;
+                height: 154px;
+                background: #E2E2E2;
+            }
+    
+                    .dropdown-about li a {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.2vw;
+                        line-height: 1.125em;
+                        text-decoration: none;
+                        padding-left: 1vw;
+                        color: #000;
+                        margin-top: 1.56vh;
+                    }
+    
+                    .dropdown-products li a {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1vw;
+                        line-height: 1em;
+                        text-decoration: none;
+                        padding-left: 1vw;
+                        color: #000;
+                        margin-top: 1.56vh;
+                    }
+    
+                    .dropdown-products li:nth-child(1) a {
+                        font-weight: 600;
+                        font-size: 1.6vw;
+                        line-height: 1.313em;
+                    }
+    
+                    .dropdown-products li:nth-child(6) a {
+                        font-weight: 600;
+                        font-size: 1.6vw;
+                        line-height: 1.313em;
+                    }
+    
+                    .dropdown-staff li a {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.2vw;
+                        line-height: 1em;
+                        text-decoration: none;
+                        padding-left: 1vw;
+                        color: #000;
+                        margin-top: 1.56vh;
+                    }
+    
+                    .dropdown-staff li:nth-child(1) a {
+                        font-weight: 600;
+                        font-size: 1.5vw;
+                        line-height: 1.313em;
+                    }
+    
+                    .dropdown-staff li:nth-child(4) a {
+                        font-weight: 600;
+                        font-size: 1.5vw;
+                        line-height: 1.313em;
+                    }
+    
+    .slider {
+        width: 100%;
+        height: 283px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url('img/slides/slide-1.jpg');
+        background-size: cover;
+    }
+    
+        .slider .news {
+            margin-left: 39.06vw;
+            width: 70vw;
+            height: 149px;
+            top: 66.5vh;
+            left: 71.09vw;        
+            background: #413D45;
+        }
+    
+            .news .news-header {
+                padding-top: 1.625vh;
+                padding-left: 1.5vw;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 1.6vw;
+                line-height: 1.938em;
+                color: #fff;
+    
+            }
+    
+            .news .news-description {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 1.1vw;
+                line-height: 1.188em;
+                color: #fff;
+                padding-left: 1.25vw;
+                padding-top: 1.625vh;
+            }
+    
+            .news .news-data {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 1.2vw;
+                line-height: 1.063em;
+                color: rgba(255, 255, 255, .6);
+                padding-left: 1.25vw;
+                padding-top: 3.625vh;
+            }
+    
+        .slider .left {
+            width: 10vw;
+            height: 9vh;
+            text-align: left;
+            margin-right: 7.42vw;
+            margin-left: 1.2vw;
+        }
+    
+        .slider .right {
+            width: 10vw;
+            height: 9vh;
+            text-align: right;
+            margin-right: 1.2vw;
+        }
+    
+            .left img, .right img {
+                width: 4vw;
+                opacity: .6;
+                transition: .3s ease-in;
+            }
+    
+            .left img:hover {
+                cursor: pointer;
+                opacity: 1;
+                transition: .3s ease-in;
+            }
+    
+            .right img:hover {
+                cursor: pointer;
+                opacity: 1;
+                transition: .3s ease-in;
+            }
+    
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .main-about {
+        width: 78%;
+        margin: 0 auto;
+        padding-top: 9px;
+        padding-bottom: 36px;
+    }
+    
+        .about-text-content p {
+            font-family: 'Fira Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.125em;
+        }
+    
+        .main .p-header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.5em;
+            text-align: center;
+        }
+    
+        .main .content {
+            width: 100%;
+            margin-top: 27px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+            @media (max-width: 767px) {
+
+                .content .image {
+                    display: none;
+                }
+                
+            }
+    
+            .content .text-content {
+                width: 63%;
+                margin-left: 1.88vw;
+            }
+    
+                .text-content p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                }
+    
+                    ul {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 1.188em;
+                        list-style: none;
+                    }
+    
+                .text-content .signature {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    line-height: 1.688em;
+                    text-align: right;
+                    margin-bottom: 5px;
+                }
+    
+    .main-team {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 35px 11.64vw;
+        margin: 0 auto;
+        align-items: center;
+        gap: 30px;
+    }
+    
+        .main-team .info-card {        
+            display: flex;
+            flex-direction: row;
+            width: 78%;
+            height: 225px;
+        }
+    
+            .info-card .employee-photo {
+                width: 18%;
+                height: 225px;
+            }
+    
+            .info-card .employee-info {
+                width: 68%;
+                height: 225px;
+                background: #D9D9D9;
+            }
+    
+                .employee-info .employee-info-name {
+                    padding-left: 1.95vw;
+                    padding-top: 10px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1.3125rem;
+                    line-height: 1.563em;
+                }
+    
+                .employee-info .employee-info-annot {
+                    padding-top: 7px;
+                    padding-left: 1.95vw;
+                    padding-right: 1.64vw;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    line-height: 1em;
+                }
+    
+                .employee-info .employee-contacts {
+                    padding-top: 8px;
+                    padding-left: 1.95vw;
+                    padding-bottom: 23px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    line-height: 0.875em;
+                }
+    
+    .main-products {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 11.64vw;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-products .products-table {
+            width: 78%;
+            border-spacing: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.188em;
+        }
+    
+            .products-table tr:nth-child(odd) {
+                background: #EFEFEF;
+            }
+    
+            .products-table tr:nth-child(even) {
+                background: #EAEAEA;
+            }
+    
+            .products-table td {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+    
+            .products-table td:nth-child(1) {
+                padding-left: 3.44vw;
+                width: 25%;
+            }
+    
+            .products-table td:nth-child(2) {
+                padding: 8px 2.73vw;
+                width: 32%;            
+            }
+    
+            .products-table td:nth-child(3) {
+                padding-right: 3.44vw;
+                width: 14%;
+                word-spacing: 8px;
+            }
+    
+            .products-table tr:nth-child(7) td:nth-child(2) {
+                line-height: 1.5;
+            }
+    
+            .products-table tr:nth-child(13) td:nth-child(2), td:nth-child(3) {
+                line-height: 1.5;
+            }
+    
+    .main-vacancy {
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    
+        .main-vacancy .content {
+            width: 78%;
+            padding: 8px 3.44vw;
+            font-family: 'Fira Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.188em;
+        }
+    
+            .content ul li {
+                margin-bottom: 18px;
+                list-style-type: disc;
+                margin-left: 1.64vw;
+                font-size: 1rem;
+            }
+    
+    .main-responsibility {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-responsibility .content {
+            width: 82%;
+            margin: 0 auto;
+            padding: 8px 3.44vw;
+            font-family: 'Fira Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.188em;
+            margin-bottom: 24px
+        }
+    
+        .main-responsibility .gallery {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }        
+
+        .main-responsibility .gallery img {
+            width: 30%
+        }
+    
+    .main-proccess {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-proccess .gallery {
+            width: 82%;
+            height: 403px;
+            padding: 3.44vw;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 8px;
+        }
+    
+    .main-clients {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-clients .content {
+            width: 82%;
+            margin: 0 8.20vw;
+            margin-bottom: 17px;
+        }
+    
+            .content .text {
+                width: 78%;
+                margin: 8px 3.44vw;
+            }
+    
+                .text p {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+    .main-eco {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-eco .content-eco {
+            width: 82%;
+            margin: 0 8.20vw;
+            margin-bottom: 9px;
+        }
+    
+            .content-eco .text {
+                width: 78%;
+                padding: 8px 3.44vw;
+            }
+    
+                .text p {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .text ul li {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    list-style: disc;
+                    margin-left: 1.64vw;
+                }
+    
+    .main-mission {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-mission .content-mission {
+            width: 82%;
+            margin: 0 8.20vw;
+            margin-bottom: 9px;
+        }
+    
+            .content-mission .text {
+                width: 78%;
+                padding: 8px 3.44vw;
+            }
+    
+                .text p {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .text ul li {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    list-style: disc;
+                    margin-left: 1.64vw;
+                }
+    
+    .main-history {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+        .main-history .content-history {
+            width: 82%;
+            margin: 0 8.20vw;
+            margin-bottom: 27px;
+        }
+    
+            .content-history .text {
+                width: 78%;
+                padding: 8px 3.44vw;
+            }
+    
+                .text p {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .text ul li {
+                    font-family: 'Fira Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188em;
+                    /* margin-left: 25px; */
+                    list-style-type: none;
+                    margin: 0;
+                }
+    
+                .text ul li:before {
+                    content:  "—";
+                }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 11.64vw;
+        gap: 188px;
+        width: 100%;
+        height: 172px;
+        background: #413D45;
+        margin: 0 auto;
+    }
+    
+        .company {
+            width: 48%;
+            height: 114px;
+            flex-direction: column;
+        }
+    
+            .company .about-company {
+                margin-bottom: 20px;
+            }
+    
+                .about-company .about-header, .address .address-header {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: 1.6vw;
+                    line-height: 1.8vw;
+                    color: #fff;
+                }
+    
+                .about-company p, .address p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    font-size: 1.4vw;
+                    line-height: 1.9vw;
+                    color: #fff;
+                }
+        
+        .contacts {
+            width: 48%;
+            height: 117px;
+            flex-direction: column;
+        }
+    
+            .contacts .sales {
+                margin-bottom: 5px;
+            }
+    
+                .sales .sales-header, .buys .buys-header {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: 1.6vw;
+                    line-height: 1.8vw;
+                    color: #fff;
+                }
+    
+                .sales p, .buys p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    font-size: 1.2vw;
+                    line-height: 1.6vw;
+                    color: #fff;
+                }
+}
+
+
+@media (max-width: 619px) {
+    .header {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header {
+        height: 25vh;
+    }
+
+    .nav {
+        height: 5vh;
+        border: 1px solid #ED4F37;
+        border-right: none;
+        border-left: none;
+        gap: 5vw;
+    }
+
+        .nav .search {
+            height: 2vh;
+            font-size: 1.6vw;
+        }
+
+    .slider {
+        height: 20vh;
+    }
+
+        .slider .news {
+            height: 10vh;
+        }
+
+            .news .news-header {
+                line-height: .8vh;
+            }
+
+            .news .news-description {
+                line-height: .8vh;
+            }
+
+            .news .news-data {
+                padding-top: 1.5vh;
+            }
+
+        .slider .left, .slider .right {
+            margin-top: 5.4vh;
+        }
+
+    .footer {
+        gap: 1px;
+        height: 23vh;
+    }
+
+        .company, .contacts {
+            height: 52px;
+        }
+        
+            .company .about-company {
+                margin-bottom: 10px;
+            }
+}
